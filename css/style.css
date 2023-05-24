@@ -1,74 +1,87 @@
+/* fonte */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
     font-family: 'Poppins', sans-serif;
 }
+
 .grid {
     display: grid;
-    gap: 0.5rem;
 }
 
-/* Barra de navegação */
-.head {
+/* ---------- Navbar ---------- */
+.head{
     width: 100%;
     position: fixed;
-    background: rgb(255, 255, 255);
+    z-index: 1;
+    background-color: white;
 }
 
-.nav_bar {
+.nav_conteiner{
     display: flex;
     width: 100%;
     height: 40px;
-    align-items: center;
     justify-content: space-between;
-    background: #000;
-    font-weight: 600;
-}
-
-.nav_link {
-    color: white;
-    position: relative;
-    padding: 20px;
-    text-decoration: none;
+    align-items: center;
+    background-color: #000;
 }
 
 .nav_list {
     list-style: none;
-    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-columns: repeat(2,2fr);
     gap: 2rem;
 }
 
-/* -------------------------------------- */
+.nav_link {
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+/* ---------------------------------------- */
 
-/* Home page */
-main {
+/* Conteudo */
+.home{
     padding-top: 40px;
+}
+
+.home_page {
     background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 900px;
+    border-bottom: 1px solid black;
 }
 
 .home_content {
     position: absolute;
-    width: 100%;
-    height: 930px;
-}
-.teste{
-    position: absolute;
+    top: 50%;
     left: 50%;
-    top: 40%;
     transform: translate(-50%,-50%);
+    padding: 10px;
 }
+
 .my_name {
     color: black;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 20px;
     line-height: 20px;
     width: 450px;
 }
-
 .my_area {
     word-break: break-all;
     font-style: normal;
@@ -92,14 +105,7 @@ main {
     font-style: normal;
     font-weight: 700;
     font-size: 11px;
-    line-height: 16px;
-    word-break: break-all;
+    line-height: 12px;
     width: 450px;
-}
-
-/* -------------------------------------- */
-
-/* Roda pé */
-.footer_bg {
-    background-color: #000;
+    text-align: right;
 }
