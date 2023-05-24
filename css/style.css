@@ -41,7 +41,7 @@ body {
 
 .nav_list {
     list-style: none;
-    grid-template-columns: repeat(2,2fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 2rem;
 }
 
@@ -50,15 +50,22 @@ body {
     border: 1px solid black;
     color: white;
     font-weight: 600;
+    font-size: 14px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 5px;
     padding: 10px;
 }
 
 .nav_link:hover {
     border: 1px solid #f7f7f7;
+}
+
+.img_download {
+    width: 30px;
+    height: 28px;
 }
 /* ---------------------------------------- */
 
@@ -68,18 +75,15 @@ body {
 }
 
 .home_page {
-    background: #FFBF00;
+    background: #FFBF00; 
     width: 100%;
     height: 900px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid black;
 }
 
 .home_content {
-    background-color: transparent;
-    backdrop-filter: blur(10px);
     padding: 10px;
 }
 
@@ -87,17 +91,18 @@ body {
     color: black;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
-    width: 450px;
+    font-size: 28px;
+    line-height: 25px;
+    padding: 2px;
+    width: 360px;
 }
 .my_area {
     word-break: break-all;
     font-style: normal;
     font-weight: 800;
-    line-height: 50px;
-    font-size: 60px;
-    width: 480px;
+    line-height: 60px;
+    font-size: 65px;
+    width: 550px;
 }
 
 .btn {
@@ -106,7 +111,7 @@ body {
 }
 
 .btn_img {
-    width: 28px;
+    width: 26px;
     height: 28px;
     transform: translatey(0px);
     animation: flutuar 5s ease-in-out infinite;
@@ -129,10 +134,11 @@ body {
 }
 
 .about_me {
+    color: rgb(53, 53, 53);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 12px;
     line-height: 12px;
-    width: 450px;
+    width: 500px;
     text-align: right;
 }
